@@ -2,7 +2,7 @@
 #ruby_functions_spec.rb
 #Example
 def return_10()
-    return 10
+  return 10
 end
 
 def add(first_number, second_number)
@@ -22,7 +22,7 @@ def divide(first_number, second_number)
 end
 
 def length_of_string(string)
-    string.length
+  string.length
 end
 
 def join_string(string_1, string_2)
@@ -30,18 +30,36 @@ def join_string(string_1, string_2)
 end
 
 def add_string_as_number(string_1, string_2)
-  return (string_1.to_i + string_2.to_i)
+  return string_1.to_i + string_2.to_i
 end
 
 def number_to_full_month_name(month_number)
   if month_number == 1
-    p "January"
-  elsif month_number == 3
-    p "March"
-  elsif month_number == 9
-    p "September"
-else
-  p "error"
+    "January"
+  elsif month_number == 2
+   "February"
+ elsif month_number == 3
+   "March"
+ elsif month_number == 4
+   "April"
+ elsif month_number == 5
+   "May"
+ elsif month_number == 6
+   "June"
+ elsif month_number == 7
+   "July"
+ elsif month_number == 8
+   "August"
+ elsif month_number == 9
+   "September"
+ elsif month_number == 10
+   "October"
+ elsif month_number == 11
+   "November"
+ elsif month_number == 12
+   "December"
+  else
+    "error"
   end
 end
 
